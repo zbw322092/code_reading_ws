@@ -5,9 +5,6 @@ First of all, it is need to clearify that `websocket` protocol is described and 
 
 https://tools.ietf.org/html/rfc6455
 
-## Further Reading
-1. http://lucumr.pocoo.org/2012/9/24/websockets-101/
-
 ## Code Reading
 ### `WebSocketServer.js`
 1. 426 Upgrade Required
