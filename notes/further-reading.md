@@ -22,3 +22,5 @@ https://betterexplained.com/articles/understanding-big-and-little-endian-byte-or
 - Big Endian and Little Endian
 https://chortle.ccsu.edu/AssemblyTutorial/Chapter-15/ass15_3.html
 
+5. Node.js & WebSocket — Simple chat tutorial
+https://medium.com/@martin.sikora/node-js-websocket-simple-chat-tutorial-2def3a841b61
