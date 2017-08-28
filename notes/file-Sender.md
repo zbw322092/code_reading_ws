@@ -30,8 +30,47 @@ https://nodejs.org/api/buffer.html#buffer_buf_writeuint32be_value_offset_noasser
 
 value should be a valid `unsigned 32-bit integer`.
 
+- `buf.copy(target[, targetStart[, sourceStart[, sourceEnd]]])`
+https://nodejs.org/api/buffer.html#buffer_buf_copy_target_targetstart_sourcestart_sourceend
+Copies data from a region of buf to a region in target even if the target memory region overlaps with buf.
+
+- `Class Method: Buffer.byteLength(string[, encoding])`
+https://nodejs.org/api/buffer.html#buffer_class_method_buffer_bytelength_string_encoding
+
+- `buf.write(string[, offset[, length]][, encoding])`
+
 
 3. `static frame` method
 This method in `Sender` class take responsibility for constructing a websocket `data framing`.
 > RFC 6455 - 5.2.  Base Framing Protocol
+
+4. Node.js `crypto` module
+- `crypto.randomBytes(size[, callback])`
+https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback
+
+Generates cryptographically strong pseudo-random data. The size argument is a number indicating the number of **bytes** to generate.
+
+5. `close` method
+...If there is a body, the first two bytes of the body MUST be a **2-byte unsigned integer** (in network byte order) representing **a status code** with value /code/ defined in Section 7.4.
+
+6. `doClose` method
+Sending a websoket closing data framing which is defined by `Sender.frame` method.
+
+7. `ArrayBuffer`
+The `ArrayBuffer` object is used to represent **a generic, fixed-length raw binary data buffer**. You cannot directly manipulate the contents of an `ArrayBuffer`; instead, you create one of the `typed array objects` or a `DataView` object which represents the buffer in a specific format, and use that to read and write the contents of the buffer.
+
+- ArrayBuffer.isView(arg)
+Returns `true` if arg **is one of the ArrayBuffer views**, such as `typed array objects` or a `DataView`. Returns false otherwise.
+
+
+8. `DataView`
+The DataView view provides a low-level interface for reading and writing multiple number types in an ArrayBuffer irrespective of the platform's endianness.
+
+
+9. **`frame`** and **`sendFrame`** are two key functions in `Sender` constructor.
+
+10. `Array.prototype.shift()` and `Array.prototype.unshift()`
+- `Array.prototype.shift()` The shift() method removes the first element from an array and returns that element. This method changes the length of the array.
+- `Array.prototype.unshift()` The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+
 
