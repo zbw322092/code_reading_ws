@@ -5,3 +5,6 @@ WebSocketServer.js
 
 WebSocket.js
 ![ws-WebSocket](../assets/ws-WebSocket.png)
+
+WS summary
+![ws-Summary](../assets/ws-Summary.png)
